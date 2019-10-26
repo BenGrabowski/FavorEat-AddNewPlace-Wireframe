@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add New Place - Wireframe</title>
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
+    <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+    <nav role="navigation">Nav</nav>
+    <main role="main">
+        <header role="header">
+            <h2>Add a New Spot</h2>
+        </header>
+
+        <section>
+            <form id="add-place">
+                <label for="place-name">Name:</label>
+                <input type="text" name="place-name" id="place-name" required>
+                <br />
+                <label for="place-type">Type:</label>
+                <select name="place-type">
+                    <option value="restaurant">Restaurant</option>
+                    <option value="bar">Bar</option>
+                    <option value="brewery">Brewery</option>
+                    <option value="winery">Winery</option>
+                </select>
+                
+                <div id="happy-hour-container">
+                    <p id="happy-hour-title">Happy Hour:</p>
+                    <label for="happy-hour">Yes</label>
+                    <input type="radio" name="happy-hour" value="yes">
+                    <br />
+                    <label for="happy-hour">No</label>
+                    <input type="radio" name="happy-hour" value="no">
+                </div>
+                
+                <div id="notes">
+                    <label for="place-notes">Notes:</label>
+                    <br />
+                    <textarea name="place-notes" id="place-notes" rows="10"></textarea>
+                </div>
+ 
+                <button>Add Menu Item</button>
+                <br />
+                <button>Save</button>
+            </form>
+        </section>
+    </main>
+    <footer role="contentinfo">Footer</footer>
+</body>
+</html>
